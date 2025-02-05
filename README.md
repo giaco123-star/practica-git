@@ -1,2 +1,2 @@
-# practica-git-
+# practica-git
 Primer repo creado en github
