@@ -1,0 +1,42 @@
+Comandos de git: 
+ver configuraciones: 
+	git config --list 
+agregar a unstage: 
+	git add <nombre archivo> 
+subir archivo y se abre un archivo de texto 
+	git commit 
+commit con mensaje de a la vez: 
+	 git commit -m "Borre archivo" -a
+Borrar archivo de directorio desde la consola de git bash
+	rm <nombre archivo>
+Recuperar archivos borrados que todavía están en stage 
+	git resotere <nombre archivo>
+Volver a ultima versión del archivo que se hizo commit
+	git checkout <nombre archivo> 
+volver a ultima versión del commit cuando esta en área de stage
+	git reset --hard 
+cambiar nombre de archivo 
+	git mv <nombre viejo> <nombre nuevo> 
+Como ver información del último commit y muestra lo del commite anterior a ese
+no muestra nada del área de stage solo de commits
+	git show <nombre archivo>
+Ver diferencia entre commit y lo que agregué al stage y esta listo para subir 
+	git diff --staged	
+Ver historial de commits 
+	git log De manera mas abreviada git log --oneline
+Abreviar código indentificador de commits 
+	git config --global core.abbrev 5
+Comparar dos commits 
+	git diff <identificadir> <identificadir>
+Ver solo el nombre de los archivos cambiados 
+	git diff --name-only <identificador> <identificador> 
+Ver diferencias en código de un archivo y otro 
+	git diff --word-diff <identificadir> <identificadir>
+Cambiar el nombre y modificar un commit 
+	git commit --amend 
+borrar un commit desde el final 
+	git reset --soft <identificador commit> numero del commit la que queremos bajar. cuando borra el commit lo que estaba en ese commit lo lleva al área de stage. 
+Otra forma es con 
+	git reset --mixed <identificador commit>
+Otra forma para borrar todo de una que nada vaya al área de stage si no que pasa al área de trabajo
+	git reset --hard 3f8b
