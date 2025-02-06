@@ -40,3 +40,5 @@ Otra forma es con
 	git reset --mixed <identificador commit>
 Otra forma para borrar todo de una que nada vaya al área de stage si no que pasa al área de trabajo
 	git reset --hard 3f8b
+Forma o tecnica de buscar commit con bug / malos (para googlear estudiar)
+	git bisect
